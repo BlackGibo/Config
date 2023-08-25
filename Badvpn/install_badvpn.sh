@@ -4,11 +4,11 @@
 
 cd
 #system badvpn 7300
-wget -O /etc/systemd/system/svr-7300.service https://raw.githubusercontent.com/BlackGibo/Config/main/Badvpn/svr_7300.service && chmod +x  /etc/systemd/system/svr-7300.service
+wget -O /etc/systemd/system/svr-7300.service https://raw.githubusercontent.com/BlackGibo/Config/main/Badvpn/svr_7100.service && chmod +x  /etc/systemd/system/svr-7300.service
 #system badvpn 7200
 wget -O /etc/systemd/system/svr-7200.service https://raw.githubusercontent.com/BlackGibo/Config/main/Badvpn/svr_7200.service && chmod +x  /etc/systemd/system/svr-7200.service
 #system badvpn 7100
-wget -O /etc/systemd/system/svr-7100.service https://raw.githubusercontent.com/BlackGibo/Config/main/Badvpn/svr_7100.service && chmod +x  /etc/systemd/system/svr-7100.service
+wget -O /etc/systemd/system/svr-7100.service https://raw.githubusercontent.com/BlackGibo/Config/main/Badvpn/svr_7300.service && chmod +x  /etc/systemd/system/svr-7100.service
 
 #reboot system 7100
 systemctl daemon-reload
