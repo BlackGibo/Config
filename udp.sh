@@ -13,9 +13,6 @@ NC='\e[0m'
 cd
 rm -rf udp.sh
 rm -rf log-install.txt
-rm -rf /usr/bin/usernew
-rm -rf /usr/bin/trial
-echo "\e[1;32m Update Menu.. \e[0m"
 sleep 1
 rm -rf /root/udp
 mkdir -p /root/udp
@@ -25,7 +22,7 @@ sleep 1
 echo "\e[1;32m Proses Download Script UdpCustom.. \e[0m"
 sleep 1
 clear
-echo "\e[1;32m Cecking Tool UdpCustom By Mardhex.. \e[0m"
+echo "\e[1;32m Cecking Tool UdpCustom By LANTIN.. \e[0m"
 sleep 1
 clear
 echo "\e[1;32m Succes Cecking Tool.. \e[0m"
@@ -43,7 +40,7 @@ sleep 1
 echo "\e[1;32m Proses Download Script Config Default.. \e[0m"
 sleep 1
 clear
-echo "\e[1;32m Cecking Config Default By Mardhex.. \e[0m"
+echo "\e[1;32m Cecking Config Default By LANTIN.. \e[0m"
 sleep 1
 clear
 echo "\e[1;32m Succes Cecking Config Default Tool.. \e[0m"
