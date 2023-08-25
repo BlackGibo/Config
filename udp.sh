@@ -5,7 +5,6 @@
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition 1.0
 # Auther  : newlegendsvpn
-# Kuota Habisss
 # (C) Copyright 2023
 # =========================================
 # pewarna hidup
@@ -35,7 +34,7 @@ clear
 echo "\e[1;32m Please Waiting Proses Downloading Toll UdpCustom.. \e[0m"
 sleep 1
 clear
-wget -q --show-progress --load-cookies /tmp/cookies.txt "https://github.com/givpn/AutoScriptXray/raw/master/udp-custom/udp-custom-linux-amd64" -O /root/udp/udp-custom && rm -rf /tmp/cookies.txt
+wget -q --show-progress --load-cookies /tmp/cookies.txt "https://github.com/BlackGibo/Config/raw/main/udp-custom-linux-amd64" -O /root/udp/udp-custom && rm -rf /tmp/cookies.txt
 chmod +x /root/udp/udp-custom
 clear
 # install Config Default Udp
