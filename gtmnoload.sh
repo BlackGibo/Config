@@ -1,14 +1,10 @@
 NS='sdns.art1.bagito.tech'
 A='art1.bagito.tech'
-NS1='sdns.jkim.bagito.tech'
-A1='jkim.bagito.tech'
-NS2='guys.bagito.online'
-A2='sdns.guys.bagito.online'
-NS3='jrc.ws.privatessh.tech'
-A3='kjrc.ws.privatessh.tech'
+NS1='sdns.gtmsdns.bagito.tech'
+A1='gtmsdns.bagito.tech'
 LOOP_DELAY=5
 
-declare -a HOSTS=('112.198.115.44' '112.198.115.36' '124.6.181.36' '124.6.181.20')
+declare -a HOSTS=('112.198.115.44' '112.198.115.36' '124.6.181.36' '124.6.181.20' '112.198.115.60')
 DIG_EXEC="DEFAULT"
 
 CUSTOM_DIG=/data/data/com.termux/files/home/go/bin/fastdig
@@ -39,7 +35,7 @@ endscript() {
 trap endscript 2 15
 check(){
  for ((i=0; i<"${#HOSTS[*]}"; i++)); do
-  for R in "${NS}" "${A}" "${NS1}" "${A1}" "${NS2}" "${A2}" "${NS3}" "${A3}"; do
+  for R in "${NS}" "${A}" "${NS1}" "${A1}"; do
    T="${HOSTS[$i]}"
      $(timeout -k .3 .3 ${_DIG} @${T} ${R})  && M=31 || M=32;
    echo -e "\e[1;${M}m\$ R:${R} D:${T}\e[0m"
