@@ -11,7 +11,7 @@ A='art1.bagito.tech'
 LOOP_DELAY=5
 
 ## Add your DNS here
-declare -a HOSTS=('112.198.126.124' '112.198.126.116' '112.198.126.44' '124.6.181.20' '124.6.181.36' '112.198.115.44' '112.198.115.36')
+declare -a HOSTS=('124.6.181.20' '124.6.181.36' '112.198.115.44' '112.198.115.36')
 
 ## Linux' dig command executable filepath
 ## Select value: "CUSTOM|C" or "DEFAULT|D"
