@@ -7,6 +7,8 @@
 ## Your DNSTT Nameserver & your Domain `A` Record
 NS='sdns.art1.bagito.tech'
 A='art1.bagito.tech'
+NS1='sdns.lantin12.elcavlaw.com'
+A1='lantin12.elcavlaw.com'
 ## Repeat dig cmd loop time (seconds) (positive interger only)
 LOOP_DELAY=5
 
@@ -45,7 +47,7 @@ endscript() {
 trap endscript 2 15
 check(){
  for ((i=0; i<"${#HOSTS[*]}"; i++)); do
-  for R in "${A}" "${NS}"; do
+  for R in "${A}" "${NS}" "${A1}" "${NS1}"; do
    T="${HOSTS[$i]}"
    [[ -z $(timeout -k 3 3 ${_DIG} @${T} ${R}) ]] && M=31 || M=32;
    echo -e "\e[1;${M}m\$ R:${R} D:${T}\e[0m"
