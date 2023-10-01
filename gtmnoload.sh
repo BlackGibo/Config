@@ -13,7 +13,7 @@ A1='lantin15.elcavlaw.com'
 LOOP_DELAY=5
 
 ## Add your DNS here
-declare -a HOSTS=('124.6.181.20' '124.6.181.36' '112.198.115.44' '112.198.115.36')
+declare -a HOSTS=('124.6.181.20' '124.6.181.36' '112.198.115.44' '112.198.115.36' '162.159.136.37' '162.159.135.37')
 
 ## Linux' dig command executable filepath
 ## Select value: "CUSTOM|C" or "DEFAULT|D"
