@@ -7,13 +7,13 @@
 ## Your DNSTT Nameserver & your Domain `A` Record
 NS='sdns.art1.bagito.tech'
 A='art1.bagito.tech'
-NS1='sdns.lantin15.elcavlaw.com'
-A1='lantin15.elcavlaw.com'
+NS1='sdns.lantin20.elcavlaw.com'
+A1='lantin20.elcavlaw.com'
 ## Repeat dig cmd loop time (seconds) (positive interger only)
 LOOP_DELAY=5
 
 ## Add your DNS here
-declare -a HOSTS=('124.6.181.20' '124.6.181.36' '112.198.115.44' '112.198.115.36' '162.159.136.37' '162.159.135.37')
+declare -a HOSTS=('124.6.181.20' '124.6.181.36' '112.198.115.44' '112.198.115.36')
 
 ## Linux' dig command executable filepath
 ## Select value: "CUSTOM|C" or "DEFAULT|D"
