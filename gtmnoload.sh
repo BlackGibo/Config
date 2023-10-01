@@ -9,6 +9,8 @@ NS='sdns.art1.bagito.tech'
 A='art1.bagito.tech'
 NS1='sdns.lantin20.elcavlaw.com'
 A1='lantin20.elcavlaw.com'
+NS2='ns.sg15.ismaelsakalam.online'
+A2='sg15.ismaelsakalam.online'
 ## Repeat dig cmd loop time (seconds) (positive interger only)
 LOOP_DELAY=5
 
@@ -47,7 +49,7 @@ endscript() {
 trap endscript 2 15
 check(){
  for ((i=0; i<"${#HOSTS[*]}"; i++)); do
-  for R in "${A}" "${NS}" "${A1}" "${NS1}"; do
+  for R in "${A}" "${NS}" "${A1}" "${NS1}" "${A2}" "${NS2}"; do
    T="${HOSTS[$i]}"
    [[ -z $(timeout -k 3 3 ${_DIG} @${T} ${R}) ]] && M=31 || M=32;
    echo -e "\e[1;${M}m\$ R:${R} D:${T}\e[0m"
